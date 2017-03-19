@@ -8,5 +8,6 @@ get '/' do
 end
 
 get '/show' do
+  @answer = ANSWERS.sample
   erb :show
 end
